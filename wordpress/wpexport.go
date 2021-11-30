@@ -227,7 +227,7 @@ func (w *WpExport) prepareItemAttachments(item *Item, fh *HugoFrontMatter, item_
 	for i := 0; i < len(attachments); i++ {
 		a := attachments[i]
 		file_name := path.Base(a.AttachmentUrl)
-		file_ext := filepath.Ext(file_name)
+		file_ext := strings.ToLower(filepath.Ext(file_name))
 		target_file_name := strings.ToLower(file_name)
 
 		w.log.Infof("Processing attachment %s", file_name)

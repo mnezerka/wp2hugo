@@ -1,4 +1,11 @@
-TODO:
+# wp2hugo
 
-* fetch and store all attachments (images, gpx, ...)
-* build resources for images in front matter, use weight
+Wordpress to Hugo converter
+
+## TODO:
+
+* featured image
+* pagination
+* page hierarchy
+* sorting of images in gallery
+* maps
